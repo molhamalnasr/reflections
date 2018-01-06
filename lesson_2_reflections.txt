@@ -1,30 +1,38 @@
 What happens when you initialize a repository? Why do you need to do it?
 
-	it creats a new repository and we need that to track the changes in our files by writing commits in the repository
+	Git adds hidden system files that start with a period to help git track commits.
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 
-	working directory is the place where all files are and repository is the place where our commits and logs are but the staging area is a temporary place where we hold our changed files to commit them
+	The staging area is the temp directory where files to be committed to the repository are moved.  The value of the staging area is that it allows one to keep track of which files one wants to commit before commiting them.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
 
-	by adding the files, that i've changed per logical change and then commit them together
+	By making sure that all changes associated with the logical change are in the staging area before committing.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
-	branches is a powerful feature when a programmer decide to add a new experiment or version to his project without effecting the orginal one.
+	Branches could be helpful when:
+	(1) Doing experimental changes
+	(2) Handling one-offs
+	(3) Working on demos/prototypes
+
+	Branches help in that they keep logical groupings of code together without impacting the main branch.  This is expecially helpful if multiple people are working off the main branch.
 
 How do the diagrams help you visualize the branch structure?
 
-	it helps to show the most current commits ancluding the commits from the brunch we wrote.
+	It's much easier to see and faster understand a visual graph branch structure than to read text.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-	the result, that the two brunches combine together to be one.
+	A combing of all changes (++++ and ----) between multiple branches into a new commit.
 
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+	Pros = saves time, is easy to do, relatively "smart" on what it automatically merges.
+	Cons = could occasionally be wrong.  Doesn't auto merge everything.  Still have to manually handle conflicts.
