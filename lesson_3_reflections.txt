@@ -26,4 +26,4 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    In general, the master branch is what is in production or is production quality, or is what will be in production.  So just about all dev work will be in a branch coming out of the master and merged back in later once the work is complete and is ready for testing and release.  If a change is a simple bug fix and is short and sweet, making the change in the master makes sense.
